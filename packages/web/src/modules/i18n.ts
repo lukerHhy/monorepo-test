@@ -7,10 +7,10 @@ import { type UserModule } from '~/types'
 // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
 const messages = Object.fromEntries(
   Object.entries(
-    import.meta.glob<{ default: any }>('../../locales/*.y(a)?ml', { eager: true }))
+    import.meta.glob<{ default: any }>('../../../locales/*.yaml', { eager: true }))
     .map(([key, value]) => {
       const yaml = key.endsWith('.yaml')
-      return [key.slice(14, yaml ? -5 : -4), value.default]
+      return [key.slice(17, yaml ? -4 : -3), value.default]
     }),
 )
 

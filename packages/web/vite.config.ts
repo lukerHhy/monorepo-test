@@ -23,6 +23,8 @@ export default defineConfig({
     },
   },
 
+  assetsInclude: ['**/*.yml'],
+
   plugins: [
     Preview(),
 
@@ -130,7 +132,7 @@ export default defineConfig({
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
-      include: [path.resolve(__dirname, 'locales/**')],
+      include: [path.resolve(__dirname, '../locales/**')],
     }),
 
     // https://github.com/antfu/vite-plugin-inspect

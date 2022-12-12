@@ -5,6 +5,8 @@ const toggleLocales = () => {
   // change to some real logic
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
+  console.log('locales', availableLocales)
+  console.log('locale', locale.value)
 }
 </script>
 
