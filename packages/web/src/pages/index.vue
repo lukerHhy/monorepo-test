@@ -28,7 +28,7 @@ const { t } = useI18n()
       <em text-sm opacity-75>{{ t('intro.desc') }}</em>
     </p>
 
-    <div py-4 />
+    <div py-4 text-main>12312312312</div>
 
     <TheInput
       v-model="name"
