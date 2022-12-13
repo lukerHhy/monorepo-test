@@ -21,6 +21,8 @@ export default defineConfig({
     },
   },
 
+  assetsInclude: ['**/*.yml'],
+
   plugins: [
     // https://github.com/vitejs/vite/tree/main/packages/plugin-legacy
     Legacy({
@@ -98,7 +100,7 @@ export default defineConfig({
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
-      include: [path.resolve(__dirname, 'locales/**')],
+      include: [path.resolve(__dirname, '../locales/**')],
     }),
 
     // https://github.com/antfu/vite-plugin-inspect
